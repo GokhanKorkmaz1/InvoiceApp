@@ -57,7 +57,7 @@ public class Operations {
 				forEach(s -> System.out.println(s.getName() + " " + s.getSurname())));
 	}
 	
-	void asdasd(Map<Integer, Invoice> invoices, double amount, Month month) {
+	void getSectorByInvoiceAmountAndMonthAverage(Map<Integer, Invoice> invoices, double amount, Month month) {
 		 invoices.values().stream()
 				.filter(i -> i.getDateOfInvoice().getMonth().getValue() == month.getValue())
 				.collect(Collectors.groupingBy(Invoice::getSector, Collectors.averagingDouble(Invoice::getAmount)))

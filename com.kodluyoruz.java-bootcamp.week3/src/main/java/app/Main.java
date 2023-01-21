@@ -71,7 +71,7 @@ public class Main {
 		System.out.println();
 		
 		System.out.println("Haziran ayını faturalarını ortalaması 750 altı olan firmalarının hangi sektörde olduğunu listeleyen kodu yazın");
-		operations.asdasd(invoices, 750, Month.JUNE);
+		operations.getSectorByInvoiceAmountAndMonthAverage(invoices, 750, Month.JUNE);
 	}
 
 }
